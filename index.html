@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ГеодезСервис — профессиональные геодезические услуги</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__icon">📐</span>
+        <span class="logo__text">ГеодезСервис</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">О нас</a></li>
+          <li><a class="nav__link" href="#services">Услуги</a></li>
+          <li><a class="nav__link" href="#projects">Проекты</a></li>
+          <li><a class="nav__link" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title">Профессиональные<br>геодезические услуги</h1>
+      <p class="hero__sub">Точные измерения, надёжные данные, современное оборудование.<br>Работаем по всей России.</p>
+      <a href="#contact" class="btn btn--primary">Получить консультацию</a>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <span class="stat__number">15+</span>
+        <span class="stat__label">лет опыта</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">500+</span>
+        <span class="stat__label">выполненных объектов</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">120+</span>
+        <span class="stat__label">довольных клиентов</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">5 мм</span>
+        <span class="stat__label">точность измерений</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <span class="section__tag">О компании</span>
+        <h2 class="section__title">Точность — наша профессия</h2>
+        <p>Компания <strong>ГеодезСервис</strong> оказывает полный комплекс геодезических и кадастровых услуг для строительства, землеустройства и инженерных изысканий. Наши специалисты имеют государственные лицензии и работают с передовым оборудованием ведущих мировых производителей.</p>
+        <p>Мы обеспечиваем высокую точность результатов, соблюдение сроков и прозрачную отчётность на каждом этапе работ.</p>
+        <ul class="about__list">
+          <li>✔ Современное геодезическое оборудование Leica и Trimble</li>
+          <li>✔ Аттестованные специалисты, члены СРО</li>
+          <li>✔ Соблюдение ГОСТов и нормативов РФ</li>
+          <li>✔ Полный пакет исполнительной документации</li>
+        </ul>
+      </div>
+      <div class="about__image">
+        <div class="about__img-placeholder" aria-hidden="true">
+          <div class="about__img-icon">🔭</div>
+          <p>Геодезические работы<br>на объекте</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Что мы делаем</span>
+        <h2 class="section__title">Наши услуги</h2>
+        <p class="section__desc">Комплексные решения для строительства, кадастра и инженерных изысканий</p>
+      </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon">🗺️</div>
+          <h3 class="service-card__title">Топографическая съёмка</h3>
+          <p class="service-card__text">Создание топографических планов и карт местности в масштабах 1:500 — 1:10 000 для проектирования и строительства.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">📏</div>
+          <h3 class="service-card__title">Вынос точек в натуру</h3>
+          <p class="service-card__text">Разбивочные работы на строительных объектах: перенос проекта в натуру с субмиллиметровой точностью.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">🏗️</div>
+          <h3 class="service-card__title">Исполнительная съёмка</h3>
+          <p class="service-card__text">Контроль положения построенных конструкций: фундаментов, свайных полей, надземных частей зданий.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">📐</div>
+          <h3 class="service-card__title">Межевание земельных участков</h3>
+          <p class="service-card__text">Определение и закрепление границ земельных участков, подготовка межевых планов для Росреестра.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">🛸</div>
+          <h3 class="service-card__title">Аэрофотосъёмка (БПЛА)</h3>
+          <p class="service-card__text">Воздушная фотограмметрия с обработкой в облачные 3D-модели, ортофотопланы и цифровые модели рельефа.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon">🏛️</div>
+          <h3 class="service-card__title">Мониторинг деформаций</h3>
+          <p class="service-card__text">Систематическое наблюдение за осадками и смещениями зданий, сооружений, откосов и других объектов.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Портфолио</span>
+        <h2 class="section__title">Выполненные проекты</h2>
+      </div>
+      <div class="projects__grid">
+        <div class="project-card">
+          <div class="project-card__thumb project-card__thumb--1">
+            <span class="project-card__badge">Строительство</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Жилой комплекс «Северный»</h3>
+            <p class="project-card__desc">Геодезическое сопровождение строительства 24-этажного ЖК: разбивка, исполнительная съёмка всех этажей.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card__thumb project-card__thumb--2">
+            <span class="project-card__badge">Инфраструктура</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Автодорога М-12 (участок)</h3>
+            <p class="project-card__desc">Топографическая съёмка полосы отвода 18 км, вынос оси дороги, контроль земляных работ.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card__thumb project-card__thumb--3">
+            <span class="project-card__badge">Кадастр</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Межевание СНТ «Луговое»</h3>
+            <p class="project-card__desc">Межевание 230 земельных участков садоводческого товарищества, подготовка документации для Росреестра.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="section__tag">Связаться</span>
+        <h2 class="section__title">Получите бесплатную консультацию</h2>
+        <p>Оставьте заявку — мы свяжемся с вами в течение 30 минут в рабочее время и рассчитаем стоимость работ.</p>
+        <ul class="contact__details">
+          <li>📞 <a href="tel:+78001234567">8 800 123-45-67</a> (звонок бесплатный)</li>
+          <li>✉️ <a href="mailto:info@geodezservis.ru">info@geodezservis.ru</a></li>
+          <li>📍 г. Москва, ул. Геодезическая, д. 1, офис 101</li>
+          <li>🕐 Пн–Пт: 9:00 — 18:00</li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Ваше имя *</label>
+          <input type="text" id="name" name="name" placeholder="Иван Иванов" required />
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+          <span class="form-error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+          <label for="service">Услуга</label>
+          <select id="service" name="service">
+            <option value="">— Выберите услугу —</option>
+            <option>Топографическая съёмка</option>
+            <option>Вынос точек в натуру</option>
+            <option>Исполнительная съёмка</option>
+            <option>Межевание земельных участков</option>
+            <option>Аэрофотосъёмка (БПЛА)</option>
+            <option>Мониторинг деформаций</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Комментарий</label>
+          <textarea id="message" name="message" rows="4" placeholder="Опишите объект и задачу..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+        <div class="form-success" id="formSuccess" hidden>
+          ✅ Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="logo logo--light">
+        <span class="logo__icon">📐</span>
+        <span class="logo__text">ГеодезСервис</span>
+      </a>
+      <p class="footer__copy">© 2024 ГеодезСервис. Все права защищены.</p>
+      <nav class="footer__nav">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
