@@ -83,6 +83,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // --- FAQ Accordion ---
+  var faqItems = document.querySelectorAll('.faq__question');
+  faqItems.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var item = button.closest('.faq__item');
+      var isActive = item.classList.contains('active');
+
+      // Close all other items
+      document.querySelectorAll('.faq__item.active').forEach(function (openItem) {
+        openItem.classList.remove('active');
+        openItem.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // --- Scroll to Top ---
+  var scrollTopBtn = document.getElementById('scrollTop');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // --- Smooth reveal on scroll ---
   var observerOptions = {
     threshold: 0.15,
@@ -99,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, observerOptions);
 
   var animElements = document.querySelectorAll(
-    '.service-card, .area__card, .about__item, .contact__detail'
+    '.service-card, .area__card, .about__item, .contact__detail, .process__step, .equipment__card, .testimonial-card, .faq__item'
   );
   animElements.forEach(function (el) {
     el.style.opacity = '0';
