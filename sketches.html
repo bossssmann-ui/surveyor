@@ -205,6 +205,27 @@
       display: block;
     }
 
+    .sketch-card__separator {
+      padding: 12px 28px;
+      background: var(--color-bg-alt);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--color-text-light);
+    }
+
+    .sketch-card__separator--wireframe {
+      color: var(--color-primary);
+    }
+
+    .sketch-card__badge--wireframe {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
     /* --- Design system table --- */
     .design-table {
       max-width: 900px;
@@ -329,7 +350,7 @@
   <!-- Header -->
   <header class="page-header">
     <h1>📐 Эскизы страниц</h1>
-    <p>Визуальные эскизы всех секций сайта «ГеоПримор» — десктоп и мобильная версия</p>
+    <p>Каркасные эскизы (wireframes) и скриншоты реализации всех секций сайта «ГеоПримор»</p>
     <a href="index.html" class="back-link">← Вернуться на главную</a>
   </header>
 
@@ -357,111 +378,144 @@
     <!-- 1. Hero -->
     <article class="sketch-card" id="hero">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>1. Шапка и Главный экран (Hero)</h3>
         <p>Фиксированная шапка с логотипом и навигацией. Главный экран с заголовком, кнопками CTA и статистикой компании. Плавающая кнопка WhatsApp в левом нижнем углу.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/01-hero.png" alt="Шапка и главный экран" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/01-hero.svg" alt="Эскиз — Шапка и главный экран" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/01-hero.png" alt="Реализация — Шапка и главный экран" loading="lazy">
     </article>
 
     <!-- 2. Services -->
     <article class="sketch-card" id="services">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>2. Услуги (Services)</h3>
         <p>Сетка из 6 карточек услуг: топографическая съёмка, межевание участков, кадастровые работы, инженерные изыскания, вынос границ в натуру, геодезический контроль.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/02-services.png" alt="Услуги" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/02-services.svg" alt="Эскиз — Услуги" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/02-services.png" alt="Реализация — Услуги" loading="lazy">
     </article>
 
     <!-- 3. Process -->
     <article class="sketch-card" id="process">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>3. Этапы работы (Process)</h3>
         <p>Пошаговый визуальный процесс из 5 этапов: заявка → договор → полевые работы → обработка → сдача результатов.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/03-process.png" alt="Этапы работы" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/03-process.svg" alt="Эскиз — Этапы работы" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/03-process.png" alt="Реализация — Этапы работы" loading="lazy">
     </article>
 
     <!-- 4. About -->
     <article class="sketch-card" id="about">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>4. О компании (About)</h3>
         <p>Секция «Почему выбирают нас» с четырьмя преимуществами: лицензии и допуски, современное оборудование, точные сроки, прозрачные цены.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/04-about.png" alt="О компании" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/04-about.svg" alt="Эскиз — О компании" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/04-about.png" alt="Реализация — О компании" loading="lazy">
     </article>
 
     <!-- 5. Equipment -->
     <article class="sketch-card" id="equipment">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>5. Оборудование (Equipment)</h3>
         <p>Сетка из 4 карточек с описанием используемого оборудования: GNSS-приёмники, электронные тахеометры, дроны для аэросъёмки, лицензионное ПО.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/05-equipment.png" alt="Оборудование" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/05-equipment.svg" alt="Эскиз — Оборудование" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/05-equipment.png" alt="Реализация — Оборудование" loading="lazy">
     </article>
 
     <!-- 6. Area -->
     <article class="sketch-card" id="area">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>6. Регион работ (Area)</h3>
         <p>Сетка из 6 карточек с городами обслуживания: Находка (главный офис, выделена), Владивосток, Артём, Уссурийск, Партизанск, весь Приморский край.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/06-area.png" alt="Регион работ" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/06-area.svg" alt="Эскиз — Регион работ" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/06-area.png" alt="Реализация — Регион работ" loading="lazy">
     </article>
 
     <!-- 7. Testimonials -->
     <article class="sketch-card" id="testimonials">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>7. Отзывы клиентов (Testimonials)</h3>
         <p>Три карточки с отзывами: звёздный рейтинг, текст отзыва, аватар и имя автора с указанием города/компании.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/07-testimonials.png" alt="Отзывы клиентов" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/07-testimonials.svg" alt="Эскиз — Отзывы клиентов" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/07-testimonials.png" alt="Реализация — Отзывы клиентов" loading="lazy">
     </article>
 
     <!-- 8. FAQ -->
     <article class="sketch-card" id="faq">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>8. Часто задаваемые вопросы (FAQ)</h3>
         <p>Аккордеон из 6 вопросов и ответов: стоимость, сроки, документы для межевания, работа с юрлицами, допуск СРО, выезд за пределы Находки.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/08-faq.png" alt="FAQ" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/08-faq.svg" alt="Эскиз — FAQ" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/08-faq.png" alt="Реализация — FAQ" loading="lazy">
     </article>
 
     <!-- 9. Contact -->
     <article class="sketch-card" id="contact">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>9. Контакты (Contact)</h3>
         <p>Контактная информация слева (телефон, e-mail, адрес, режим работы) и форма заявки справа (имя, телефон, e-mail, выбор услуги, сообщение).</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/09-contact.png" alt="Контакты" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/09-contact.svg" alt="Эскиз — Контакты" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/09-contact.png" alt="Реализация — Контакты" loading="lazy">
     </article>
 
     <!-- 10. Footer -->
     <article class="sketch-card" id="footer">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge">Десктоп 1280px</span>
         <h3>10. Подвал (Footer)</h3>
         <p>Тёмный подвал с логотипом, ссылками на услуги, навигацией по разделам и копирайтом. Кнопка «Наверх» в правом нижнем углу.</p>
       </div>
-      <img class="sketch-card__image" src="screenshots/10-footer.png" alt="Подвал" loading="lazy">
+      <img class="sketch-card__image" src="wireframes/10-footer.svg" alt="Эскиз — Подвал" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image" src="screenshots/10-footer.png" alt="Реализация — Подвал" loading="lazy">
     </article>
 
     <!-- 11. Mobile -->
     <article class="sketch-card" id="mobile">
       <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--wireframe">Эскиз</span>
         <span class="sketch-card__badge sketch-card__badge--mobile">📱 Мобильная 375px</span>
         <h3>11. Мобильная версия</h3>
         <p>Адаптивный дизайн для мобильных устройств (375px). Бургер-меню, одноколоночная раскладка, адаптированные кнопки.</p>
       </div>
-      <img class="sketch-card__image sketch-card__image--mobile" src="screenshots/11-mobile-hero.png" alt="Мобильная версия" loading="lazy">
+      <img class="sketch-card__image sketch-card__image--mobile" src="wireframes/11-mobile-hero.svg" alt="Эскиз — Мобильная версия" loading="lazy">
+      <div class="sketch-card__separator">📸 Реализация</div>
+      <img class="sketch-card__image sketch-card__image--mobile" src="screenshots/11-mobile-hero.png" alt="Реализация — Мобильная версия" loading="lazy">
     </article>
 
   </main>
