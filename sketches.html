@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Эскизы страниц — ГеоПримор</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-primary: #1a5632;
+      --color-primary-dark: #0f3d22;
+      --color-accent: #d4a843;
+      --color-bg: #ffffff;
+      --color-bg-alt: #f4f7f5;
+      --color-text: #2c3e35;
+      --color-text-light: #5a6e62;
+      --color-border: #d6ddd9;
+      --font-main: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--color-text);
+      background: var(--color-bg-alt);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Header --- */
+    .page-header {
+      background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+      color: #fff;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--color-accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* --- Nav --- */
+    .toc {
+      max-width: 900px;
+      margin: -20px auto 0;
+      background: var(--color-bg);
+      border-radius: 12px;
+      padding: 24px 32px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    .toc h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-grid a {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.92rem;
+      color: var(--color-text);
+      transition: background 0.2s;
+    }
+
+    .toc-grid a:hover {
+      background: var(--color-bg-alt);
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+
+    .toc-grid a .num {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* --- Section --- */
+    .sketch-section {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    .sketch-card {
+      background: var(--color-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      margin-bottom: 32px;
+      scroll-margin-top: 24px;
+    }
+
+    .sketch-card__header {
+      padding: 24px 28px 16px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .sketch-card__header h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .sketch-card__header p {
+      font-size: 0.95rem;
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    .sketch-card__image {
+      display: block;
+      width: 100%;
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+
+    .sketch-card__image:hover {
+      transform: scale(1.01);
+    }
+
+    .sketch-card__badge {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-primary-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .sketch-card__badge--mobile {
+      background: #e8f5e9;
+      color: var(--color-primary);
+    }
+
+    .sketch-card__image--mobile {
+      max-width: 375px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* --- Design system table --- */
+    .design-table {
+      max-width: 900px;
+      margin: 32px auto 48px;
+      padding: 0 20px;
+    }
+
+    .design-table__card {
+      background: var(--color-bg);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .design-table__card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 16px;
+    }
+
+    .design-table__card table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .design-table__card th,
+    .design-table__card td {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .design-table__card th {
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      width: 200px;
+    }
+
+    .design-table__card td {
+      color: var(--color-text-light);
+    }
+
+    .design-table__card tr:last-child th,
+    .design-table__card tr:last-child td {
+      border-bottom: none;
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-right: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* --- Footer --- */
+    .page-footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+    }
+
+    /* --- Lightbox --- */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 95vw;
+      max-height: 95vh;
+      border-radius: 8px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 600px) {
+      .page-header h1 {
+        font-size: 1.6rem;
+      }
+
+      .toc {
+        padding: 16px 20px;
+      }
+
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sketch-card__header {
+        padding: 20px 20px 14px;
+      }
+
+      .design-table__card {
+        padding: 20px;
+        overflow-x: auto;
+      }
+
+      .design-table__card th {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>📐 Эскизы страниц</h1>
+    <p>Визуальные эскизы всех секций сайта «ГеоПримор» — десктоп и мобильная версия</p>
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  </header>
+
+  <!-- Table of Contents -->
+  <nav class="toc">
+    <h2>📑 Содержание</h2>
+    <div class="toc-grid">
+      <a href="#hero"><span class="num">1</span>Главный экран</a>
+      <a href="#services"><span class="num">2</span>Услуги</a>
+      <a href="#process"><span class="num">3</span>Этапы работы</a>
+      <a href="#about"><span class="num">4</span>О компании</a>
+      <a href="#equipment"><span class="num">5</span>Оборудование</a>
+      <a href="#area"><span class="num">6</span>Регион работ</a>
+      <a href="#testimonials"><span class="num">7</span>Отзывы</a>
+      <a href="#faq"><span class="num">8</span>FAQ</a>
+      <a href="#contact"><span class="num">9</span>Контакты</a>
+      <a href="#footer"><span class="num">10</span>Подвал</a>
+      <a href="#mobile"><span class="num">📱</span>Мобильная</a>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <main class="sketch-section">
+
+    <!-- 1. Hero -->
+    <article class="sketch-card" id="hero">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>1. Шапка и Главный экран (Hero)</h3>
+        <p>Фиксированная шапка с логотипом и навигацией. Главный экран с заголовком, кнопками CTA и статистикой компании. Плавающая кнопка WhatsApp в левом нижнем углу.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/01-hero.png" alt="Шапка и главный экран" loading="lazy">
+    </article>
+
+    <!-- 2. Services -->
+    <article class="sketch-card" id="services">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>2. Услуги (Services)</h3>
+        <p>Сетка из 6 карточек услуг: топографическая съёмка, межевание участков, кадастровые работы, инженерные изыскания, вынос границ в натуру, геодезический контроль.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/02-services.png" alt="Услуги" loading="lazy">
+    </article>
+
+    <!-- 3. Process -->
+    <article class="sketch-card" id="process">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>3. Этапы работы (Process)</h3>
+        <p>Пошаговый визуальный процесс из 5 этапов: заявка → договор → полевые работы → обработка → сдача результатов.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/03-process.png" alt="Этапы работы" loading="lazy">
+    </article>
+
+    <!-- 4. About -->
+    <article class="sketch-card" id="about">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>4. О компании (About)</h3>
+        <p>Секция «Почему выбирают нас» с четырьмя преимуществами: лицензии и допуски, современное оборудование, точные сроки, прозрачные цены.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/04-about.png" alt="О компании" loading="lazy">
+    </article>
+
+    <!-- 5. Equipment -->
+    <article class="sketch-card" id="equipment">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>5. Оборудование (Equipment)</h3>
+        <p>Сетка из 4 карточек с описанием используемого оборудования: GNSS-приёмники, электронные тахеометры, дроны для аэросъёмки, лицензионное ПО.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/05-equipment.png" alt="Оборудование" loading="lazy">
+    </article>
+
+    <!-- 6. Area -->
+    <article class="sketch-card" id="area">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>6. Регион работ (Area)</h3>
+        <p>Сетка из 6 карточек с городами обслуживания: Находка (главный офис, выделена), Владивосток, Артём, Уссурийск, Партизанск, весь Приморский край.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/06-area.png" alt="Регион работ" loading="lazy">
+    </article>
+
+    <!-- 7. Testimonials -->
+    <article class="sketch-card" id="testimonials">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>7. Отзывы клиентов (Testimonials)</h3>
+        <p>Три карточки с отзывами: звёздный рейтинг, текст отзыва, аватар и имя автора с указанием города/компании.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/07-testimonials.png" alt="Отзывы клиентов" loading="lazy">
+    </article>
+
+    <!-- 8. FAQ -->
+    <article class="sketch-card" id="faq">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>8. Часто задаваемые вопросы (FAQ)</h3>
+        <p>Аккордеон из 6 вопросов и ответов: стоимость, сроки, документы для межевания, работа с юрлицами, допуск СРО, выезд за пределы Находки.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/08-faq.png" alt="FAQ" loading="lazy">
+    </article>
+
+    <!-- 9. Contact -->
+    <article class="sketch-card" id="contact">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>9. Контакты (Contact)</h3>
+        <p>Контактная информация слева (телефон, e-mail, адрес, режим работы) и форма заявки справа (имя, телефон, e-mail, выбор услуги, сообщение).</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/09-contact.png" alt="Контакты" loading="lazy">
+    </article>
+
+    <!-- 10. Footer -->
+    <article class="sketch-card" id="footer">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge">Десктоп 1280px</span>
+        <h3>10. Подвал (Footer)</h3>
+        <p>Тёмный подвал с логотипом, ссылками на услуги, навигацией по разделам и копирайтом. Кнопка «Наверх» в правом нижнем углу.</p>
+      </div>
+      <img class="sketch-card__image" src="screenshots/10-footer.png" alt="Подвал" loading="lazy">
+    </article>
+
+    <!-- 11. Mobile -->
+    <article class="sketch-card" id="mobile">
+      <div class="sketch-card__header">
+        <span class="sketch-card__badge sketch-card__badge--mobile">📱 Мобильная 375px</span>
+        <h3>11. Мобильная версия</h3>
+        <p>Адаптивный дизайн для мобильных устройств (375px). Бургер-меню, одноколоночная раскладка, адаптированные кнопки.</p>
+      </div>
+      <img class="sketch-card__image sketch-card__image--mobile" src="screenshots/11-mobile-hero.png" alt="Мобильная версия" loading="lazy">
+    </article>
+
+  </main>
+
+  <!-- Design System -->
+  <div class="design-table">
+    <div class="design-table__card">
+      <h2>🎨 Дизайн-система</h2>
+      <table>
+        <tr>
+          <th>Основной цвет</th>
+          <td><span class="color-swatch" style="background:#1a5632"></span><code>#1a5632</code> — тёмно-зелёный</td>
+        </tr>
+        <tr>
+          <th>Акцентный цвет</th>
+          <td><span class="color-swatch" style="background:#d4a843"></span><code>#d4a843</code> — золотой</td>
+        </tr>
+        <tr>
+          <th>Фон</th>
+          <td><span class="color-swatch" style="background:#ffffff"></span><code>#ffffff</code> / <span class="color-swatch" style="background:#f4f7f5"></span><code>#f4f7f5</code></td>
+        </tr>
+        <tr>
+          <th>Тёмный фон</th>
+          <td><span class="color-swatch" style="background:#1a2e23"></span><code>#1a2e23</code></td>
+        </tr>
+        <tr>
+          <th>Шрифт</th>
+          <td>Segoe UI, Helvetica Neue, Arial</td>
+        </tr>
+        <tr>
+          <th>Скругления</th>
+          <td>6px / 10px / 16px</td>
+        </tr>
+        <tr>
+          <th>Анимации</th>
+          <td>fade-in при прокрутке, hover-эффекты на карточках</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>Эскизы сайта «ГеоПримор» · <a href="index.html">Вернуться на главную</a></p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Увеличенный эскиз">
+  </div>
+
+  <script>
+    // Lightbox functionality
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = lightbox.querySelector('img');
+    var lastFocusedElement = null;
+
+    document.querySelectorAll('.sketch-card__image').forEach(function (img) {
+      img.addEventListener('click', function () {
+        lastFocusedElement = img;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+        lastFocusedElement = null;
+      }
+    }
+
+    lightbox.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
