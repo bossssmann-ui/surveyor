@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440">
+  <rect width="1280" height="440" fill="#f8f8f8"/>
+
+  <!-- Section title -->
+  <text x="640" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle">Часто задаваемые вопросы</text>
+  <rect x="490" y="60" width="300" height="8" rx="4" fill="#ccc"/>
+
+  <!-- FAQ Item 1 — expanded -->
+  <rect x="180" y="88" width="920" height="86" rx="8" fill="#fff" stroke="#1a5632" stroke-width="1.5"/>
+  <text x="210" y="114" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Сколько стоит топографическая съёмка?</text>
+  <text x="1060" y="114" font-family="Arial, sans-serif" font-size="18" fill="#1a5632" text-anchor="middle">▴</text>
+  <rect x="210" y="132" width="860" height="6" rx="3" fill="#ccc"/>
+  <rect x="210" y="146" width="780" height="6" rx="3" fill="#ccc"/>
+  <rect x="210" y="160" width="600" height="6" rx="3" fill="#ccc"/>
+
+  <!-- FAQ Item 2 -->
+  <rect x="180" y="186" width="920" height="44" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="210" y="214" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Какие сроки выполнения работ?</text>
+  <text x="1060" y="214" font-family="Arial, sans-serif" font-size="18" fill="#555" text-anchor="middle">▾</text>
+
+  <!-- FAQ Item 3 -->
+  <rect x="180" y="240" width="920" height="44" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="210" y="268" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Нужна ли лицензия для геодезических работ?</text>
+  <text x="1060" y="268" font-family="Arial, sans-serif" font-size="18" fill="#555" text-anchor="middle">▾</text>
+
+  <!-- FAQ Item 4 -->
+  <rect x="180" y="294" width="920" height="44" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="210" y="322" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Работаете ли вы за пределами Приморского края?</text>
+  <text x="1060" y="322" font-family="Arial, sans-serif" font-size="18" fill="#555" text-anchor="middle">▾</text>
+
+  <!-- FAQ Item 5 -->
+  <rect x="180" y="348" width="920" height="44" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="210" y="376" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Какие документы нужны для начала работ?</text>
+  <text x="1060" y="376" font-family="Arial, sans-serif" font-size="18" fill="#555" text-anchor="middle">▾</text>
+
+  <!-- FAQ Item 6 -->
+  <rect x="180" y="402" width="920" height="44" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="210" y="430" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Предоставляете ли вы гарантию на работы?</text>
+  <text x="1060" y="430" font-family="Arial, sans-serif" font-size="18" fill="#555" text-anchor="middle">▾</text>
+</svg>
