@@ -907,7 +907,7 @@ img {
 }
 
 .faq__item.active .faq__answer {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 /* ============================================

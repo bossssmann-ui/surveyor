@@ -93,7 +93,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // Close all other items
       document.querySelectorAll('.faq__item.active').forEach(function (openItem) {
         openItem.classList.remove('active');
-        openItem.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        var questionBtn = openItem.querySelector('.faq__question');
+        if (questionBtn) {
+          questionBtn.setAttribute('aria-expanded', 'false');
+        }
       });
 
       // Toggle current item
