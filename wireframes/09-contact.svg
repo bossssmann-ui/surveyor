@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450">
+  <rect width="1280" height="450" fill="#f8f8f8"/>
+
+  <!-- Section title left-aligned -->
+  <text x="80" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333">Свяжитесь с нами</text>
+  <rect x="80" y="65" width="200" height="8" rx="4" fill="#ccc"/>
+
+  <!-- Left column: contact details -->
+  <!-- Phone -->
+  <circle cx="110" cy="120" r="18" fill="#1a5632" opacity="0.15"/>
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="14" fill="#1a5632" text-anchor="middle">☎</text>
+  <text x="140" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">+7 (423) 123-45-67</text>
+  <text x="140" y="136" font-family="Arial, sans-serif" font-size="12" fill="#555">Звоните с 9:00 до 18:00</text>
+
+  <!-- Email -->
+  <circle cx="110" cy="185" r="18" fill="#1a5632" opacity="0.15"/>
+  <text x="110" y="190" font-family="Arial, sans-serif" font-size="14" fill="#1a5632" text-anchor="middle">✉</text>
+  <text x="140" y="183" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">info@geoprimor.ru</text>
+  <text x="140" y="201" font-family="Arial, sans-serif" font-size="12" fill="#555">Ответим в течение 24 часов</text>
+
+  <!-- Address -->
+  <circle cx="110" cy="250" r="18" fill="#1a5632" opacity="0.15"/>
+  <text x="110" y="255" font-family="Arial, sans-serif" font-size="14" fill="#1a5632" text-anchor="middle">⌂</text>
+  <text x="140" y="248" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">г. Владивосток, ул. Примерная, 1</text>
+  <text x="140" y="266" font-family="Arial, sans-serif" font-size="12" fill="#555">Офис 301, 3 этаж</text>
+
+  <!-- Clock -->
+  <circle cx="110" cy="315" r="18" fill="#1a5632" opacity="0.15"/>
+  <text x="110" y="320" font-family="Arial, sans-serif" font-size="14" fill="#1a5632" text-anchor="middle">◷</text>
+  <text x="140" y="313" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Пн-Пт: 9:00 — 18:00</text>
+  <text x="140" y="331" font-family="Arial, sans-serif" font-size="12" fill="#555">Сб-Вс: выходной</text>
+
+  <!-- Right column: form -->
+  <rect x="580" y="90" width="620" height="340" rx="8" fill="#fff" stroke="#ccc"/>
+
+  <!-- Name field -->
+  <text x="610" y="125" font-family="Arial, sans-serif" font-size="12" fill="#555">Ваше имя</text>
+  <rect x="610" y="132" width="270" height="36" rx="6" fill="#f8f8f8" stroke="#ccc"/>
+
+  <!-- Phone field -->
+  <text x="900" y="125" font-family="Arial, sans-serif" font-size="12" fill="#555">Телефон</text>
+  <rect x="900" y="132" width="270" height="36" rx="6" fill="#f8f8f8" stroke="#ccc"/>
+
+  <!-- Email field -->
+  <text x="610" y="190" font-family="Arial, sans-serif" font-size="12" fill="#555">Email</text>
+  <rect x="610" y="197" width="270" height="36" rx="6" fill="#f8f8f8" stroke="#ccc"/>
+
+  <!-- Select dropdown -->
+  <text x="900" y="190" font-family="Arial, sans-serif" font-size="12" fill="#555">Тип услуги</text>
+  <rect x="900" y="197" width="270" height="36" rx="6" fill="#f8f8f8" stroke="#ccc"/>
+  <text x="1150" y="220" font-family="Arial, sans-serif" font-size="12" fill="#999" text-anchor="middle">▾</text>
+
+  <!-- Textarea -->
+  <text x="610" y="255" font-family="Arial, sans-serif" font-size="12" fill="#555">Сообщение</text>
+  <rect x="610" y="262" width="560" height="80" rx="6" fill="#f8f8f8" stroke="#ccc"/>
+
+  <!-- Submit button -->
+  <rect x="610" y="360" width="200" height="44" rx="22" fill="#d4a843"/>
+  <text x="710" y="388" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">Отправить заявку</text>
+</svg>

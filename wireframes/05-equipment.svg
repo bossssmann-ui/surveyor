@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450">
+  <rect width="1280" height="450" fill="#f8f8f8"/>
+
+  <!-- Section title -->
+  <text x="640" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle">Наше оборудование</text>
+  <rect x="515" y="65" width="250" height="8" rx="4" fill="#ccc"/>
+
+  <!-- Row 1 -->
+  <!-- Card 1 -->
+  <rect x="80" y="100" width="540" height="140" rx="8" fill="#fff" stroke="#ccc"/>
+  <rect x="95" y="112" width="160" height="100" rx="4" fill="#eee" stroke="#ccc"/>
+  <line x1="95" y1="112" x2="255" y2="212" stroke="#ccc" stroke-width="1"/>
+  <line x1="255" y1="112" x2="95" y2="212" stroke="#ccc" stroke-width="1"/>
+  <text x="280" y="145" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Тахеометр Leica</text>
+  <rect x="280" y="158" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="280" y="173" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="280" y="188" width="220" height="6" rx="3" fill="#ccc"/>
+
+  <!-- Card 2 -->
+  <rect x="650" y="100" width="540" height="140" rx="8" fill="#fff" stroke="#ccc"/>
+  <rect x="665" y="112" width="160" height="100" rx="4" fill="#eee" stroke="#ccc"/>
+  <line x1="665" y1="112" x2="825" y2="212" stroke="#ccc" stroke-width="1"/>
+  <line x1="825" y1="112" x2="665" y2="212" stroke="#ccc" stroke-width="1"/>
+  <text x="850" y="145" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">GPS приёмник Trimble</text>
+  <rect x="850" y="158" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="850" y="173" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="850" y="188" width="220" height="6" rx="3" fill="#ccc"/>
+
+  <!-- Row 2 -->
+  <!-- Card 3 -->
+  <rect x="80" y="270" width="540" height="140" rx="8" fill="#fff" stroke="#ccc"/>
+  <rect x="95" y="282" width="160" height="100" rx="4" fill="#eee" stroke="#ccc"/>
+  <line x1="95" y1="282" x2="255" y2="382" stroke="#ccc" stroke-width="1"/>
+  <line x1="255" y1="282" x2="95" y2="382" stroke="#ccc" stroke-width="1"/>
+  <text x="280" y="315" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Нивелир Sokkia</text>
+  <rect x="280" y="328" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="280" y="343" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="280" y="358" width="220" height="6" rx="3" fill="#ccc"/>
+
+  <!-- Card 4 -->
+  <rect x="650" y="270" width="540" height="140" rx="8" fill="#fff" stroke="#ccc"/>
+  <rect x="665" y="282" width="160" height="100" rx="4" fill="#eee" stroke="#ccc"/>
+  <line x1="665" y1="282" x2="825" y2="382" stroke="#ccc" stroke-width="1"/>
+  <line x1="825" y1="282" x2="665" y2="382" stroke="#ccc" stroke-width="1"/>
+  <text x="850" y="315" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333">Дрон DJI Phantom</text>
+  <rect x="850" y="328" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="850" y="343" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="850" y="358" width="220" height="6" rx="3" fill="#ccc"/>
+</svg>

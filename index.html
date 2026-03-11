@@ -13,6 +13,26 @@
   <meta property="og:locale" content="ru_RU">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ГеоПримор",
+    "description": "Профессиональные геодезические изыскания в Приморском крае и г. Находка",
+    "url": "https://geoprimor.ru",
+    "telephone": "+74236000000",
+    "email": "info@geoprimor.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Находка",
+      "addressRegion": "Приморский край",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "areaServed": "Приморский край",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
 
@@ -27,7 +47,9 @@
         <a href="#services" class="header__link">Услуги</a>
         <a href="#about" class="header__link">О нас</a>
         <a href="#area" class="header__link">Регион работ</a>
+        <a href="#faq" class="header__link">Вопросы</a>
         <a href="#contact" class="header__link">Контакты</a>
+        <a href="sketches.html" class="header__link">Эскизы</a>
       </nav>
       <button class="header__burger" id="burger" aria-label="Открыть меню">
         <span></span><span></span><span></span>
@@ -108,6 +130,41 @@
     </div>
   </section>
 
+  <!-- Этапы работы -->
+  <section class="process" id="process">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <p class="section-subtitle">Прозрачный и понятный процесс от заявки до получения готовой документации</p>
+      <div class="process__grid">
+        <div class="process__step">
+          <div class="process__step-num">1</div>
+          <h3 class="process__step-title">Заявка и консультация</h3>
+          <p class="process__step-text">Вы оставляете заявку, мы связываемся с&nbsp;вами, уточняем задачу и&nbsp;бесплатно консультируем по&nbsp;срокам и&nbsp;стоимости.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">2</div>
+          <h3 class="process__step-title">Договор и оплата</h3>
+          <p class="process__step-text">Заключаем договор с&nbsp;фиксированной ценой, согласуем сроки и&nbsp;объём работ. Без скрытых доплат.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">3</div>
+          <h3 class="process__step-title">Полевые работы</h3>
+          <p class="process__step-text">Выезжаем на объект, выполняем геодезическую съёмку с&nbsp;использованием высокоточного оборудования.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">4</div>
+          <h3 class="process__step-title">Камеральная обработка</h3>
+          <p class="process__step-text">Обрабатываем данные в&nbsp;лицензионном ПО, готовим планы, отчёты и&nbsp;техническую документацию.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">5</div>
+          <h3 class="process__step-title">Сдача результатов</h3>
+          <p class="process__step-text">Передаём вам готовую документацию, при необходимости подаём материалы в&nbsp;Росреестр или&nbsp;заказчику.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- О компании -->
   <section class="about" id="about">
     <div class="container about__inner">
@@ -154,6 +211,36 @@
     </div>
   </section>
 
+  <!-- Оборудование -->
+  <section class="equipment" id="equipment">
+    <div class="container">
+      <h2 class="section-title">Наше оборудование</h2>
+      <p class="section-subtitle">Работаем только с профессиональным высокоточным оборудованием ведущих мировых производителей</p>
+      <div class="equipment__grid">
+        <div class="equipment__card">
+          <div class="equipment__card-icon">📡</div>
+          <h3 class="equipment__card-title">GNSS-приёмники</h3>
+          <p class="equipment__card-text">Спутниковые приёмники для высокоточного определения координат в&nbsp;режиме реального времени (RTK).</p>
+        </div>
+        <div class="equipment__card">
+          <div class="equipment__card-icon">🔭</div>
+          <h3 class="equipment__card-title">Электронные тахеометры</h3>
+          <p class="equipment__card-text">Высокоточные тахеометры для детальной съёмки объектов, зданий и&nbsp;инженерных сетей.</p>
+        </div>
+        <div class="equipment__card">
+          <div class="equipment__card-icon">🚁</div>
+          <h3 class="equipment__card-title">Дроны для аэросъёмки</h3>
+          <p class="equipment__card-text">БПЛА с&nbsp;геодезическими камерами для аэрофотосъёмки и&nbsp;создания ортофотопланов больших территорий.</p>
+        </div>
+        <div class="equipment__card">
+          <div class="equipment__card-icon">💻</div>
+          <h3 class="equipment__card-title">Лицензионное ПО</h3>
+          <p class="equipment__card-text">Профессиональное программное обеспечение для обработки данных, создания планов и&nbsp;3D-моделей.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Регион работ -->
   <section class="area" id="area">
     <div class="container">
@@ -189,6 +276,113 @@
           <div class="area__card-icon">📍</div>
           <h3>Весь Приморский край</h3>
           <p>Выполняем заказы в&nbsp;любой точке Приморского края по&nbsp;договорённости.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы клиентов -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Отзывы клиентов</h2>
+      <p class="section-subtitle">Нам доверяют частные лица и организации по всему Приморскому краю</p>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Заказывали межевание участка в Находке. Всё сделали быстро и качественно, документы приняли в&nbsp;Росреестре с&nbsp;первого раза. Рекомендую!»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">АК</div>
+            <div>
+              <strong>Алексей К.</strong>
+              <span>Частный клиент, г. Находка</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Сотрудничаем с&nbsp;ГеоПримор уже третий год по&nbsp;инженерным изысканиям. Всегда точные сроки, грамотная документация, профессиональный подход.»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ОВ</div>
+            <div>
+              <strong>Ольга В.</strong>
+              <span>ООО «ПримСтрой», г. Владивосток</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Нужна была срочная топосъёмка для проекта. Ребята выехали на следующий день, результат получили через неделю. Отличная команда!»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ДМ</div>
+            <div>
+              <strong>Дмитрий М.</strong>
+              <span>ИП, г. Артём</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Часто задаваемые вопросы -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Часто задаваемые вопросы</h2>
+      <p class="section-subtitle">Ответы на популярные вопросы о наших услугах</p>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Сколько стоят геодезические работы?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Стоимость зависит от типа работ, площади участка и удалённости объекта. Топографическая съёмка — от&nbsp;8 000 ₽, межевание — от&nbsp;10 000 ₽, кадастровые работы — от&nbsp;12 000 ₽. Точную цену рассчитаем после уточнения деталей вашего проекта.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Какие сроки выполнения работ?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Типичные сроки: топографическая съёмка — 5–10 рабочих дней, межевание — 7–14 дней, кадастровые работы — 10–20 дней. Срочные заказы обсуждаются индивидуально.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Какие документы нужны для заказа межевания?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Для межевания потребуются: паспорт собственника, правоустанавливающие документы на участок (выписка из ЕГРН, свидетельство о собственности), кадастровый номер. Мы поможем собрать все необходимые документы.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Вы работаете с юридическими лицами?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Да, мы работаем как с частными лицами, так и с организациями. Заключаем договор, предоставляем все закрывающие документы (акты, счета-фактуры). Имеем опыт работы с государственными заказчиками.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Есть ли у вас допуск СРО?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Да, мы являемся действующими членами саморегулируемой организации (СРО) и имеем все необходимые лицензии для выполнения геодезических и кадастровых работ на территории РФ.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Выезжаете ли вы за пределы Находки?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Да, мы выполняем работы по всему Приморскому краю: Владивосток, Артём, Уссурийск, Партизанск и другие населённые пункты. Стоимость выезда зависит от удалённости объекта.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -285,14 +479,27 @@
         <h4>Навигация</h4>
         <a href="#hero">Главная</a>
         <a href="#about">О нас</a>
+        <a href="#equipment">Оборудование</a>
         <a href="#area">Регион работ</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#faq">Вопросы</a>
         <a href="#contact">Контакты</a>
+        <a href="sketches.html">Эскизы</a>
       </div>
       <div class="footer__copyright">
         <p>&copy; 2024–2026 ГеоПримор. Все права защищены.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Кнопка «Наверх» -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <!-- Плавающая кнопка связи -->
+  <a href="https://wa.me/74236000000" class="floating-contact" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+    <span class="floating-contact__icon">💬</span>
+    <span class="floating-contact__label">WhatsApp</span>
+  </a>
 
   <script src="js/main.js"></script>
 </body>

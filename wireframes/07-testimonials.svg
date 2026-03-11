@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="350" viewBox="0 0 1280 350">
+  <rect width="1280" height="350" fill="#f8f8f8"/>
+
+  <!-- Section title -->
+  <text x="640" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle">Отзывы клиентов</text>
+  <rect x="515" y="65" width="250" height="8" rx="4" fill="#ccc"/>
+
+  <!-- Card 1 -->
+  <rect x="80" y="100" width="350" height="220" rx="8" fill="#fff" stroke="#ccc"/>
+  <!-- Stars -->
+  <text x="105" y="132" font-family="Arial, sans-serif" font-size="18" fill="#d4a843">★ ★ ★ ★ ★</text>
+  <!-- Quote lines -->
+  <rect x="105" y="150" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="105" y="165" width="280" height="6" rx="3" fill="#ccc"/>
+  <rect x="105" y="180" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="105" y="195" width="200" height="6" rx="3" fill="#ccc"/>
+  <!-- Avatar + name -->
+  <circle cx="130" cy="270" r="20" fill="#eee" stroke="#ccc"/>
+  <text x="160" y="266" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Иван Петров</text>
+  <text x="160" y="282" font-family="Arial, sans-serif" font-size="12" fill="#555">Владивосток</text>
+
+  <!-- Card 2 -->
+  <rect x="460" y="100" width="350" height="220" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="485" y="132" font-family="Arial, sans-serif" font-size="18" fill="#d4a843">★ ★ ★ ★ ★</text>
+  <rect x="485" y="150" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="485" y="165" width="280" height="6" rx="3" fill="#ccc"/>
+  <rect x="485" y="180" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="485" y="195" width="200" height="6" rx="3" fill="#ccc"/>
+  <circle cx="510" cy="270" r="20" fill="#eee" stroke="#ccc"/>
+  <text x="540" y="266" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Мария Сидорова</text>
+  <text x="540" y="282" font-family="Arial, sans-serif" font-size="12" fill="#555">Уссурийск</text>
+
+  <!-- Card 3 -->
+  <rect x="840" y="100" width="350" height="220" rx="8" fill="#fff" stroke="#ccc"/>
+  <text x="865" y="132" font-family="Arial, sans-serif" font-size="18" fill="#d4a843">★ ★ ★ ★ ★</text>
+  <rect x="865" y="150" width="300" height="6" rx="3" fill="#ccc"/>
+  <rect x="865" y="165" width="280" height="6" rx="3" fill="#ccc"/>
+  <rect x="865" y="180" width="260" height="6" rx="3" fill="#ccc"/>
+  <rect x="865" y="195" width="200" height="6" rx="3" fill="#ccc"/>
+  <circle cx="890" cy="270" r="20" fill="#eee" stroke="#ccc"/>
+  <text x="920" y="266" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Алексей Козлов</text>
+  <text x="920" y="282" font-family="Arial, sans-serif" font-size="12" fill="#555">Находка</text>
+</svg>

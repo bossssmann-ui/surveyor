@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="350" viewBox="0 0 1280 350">
+  <rect width="1280" height="350" fill="#f8f8f8"/>
+
+  <!-- Section title -->
+  <text x="640" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle">Как мы работаем</text>
+  <rect x="515" y="65" width="250" height="8" rx="4" fill="#ccc"/>
+
+  <!-- Step circles and connectors -->
+  <!-- Connector lines -->
+  <line x1="216" y1="150" x2="404" y2="150" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="456" y1="150" x2="604" y2="150" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="656" y1="150" x2="804" y2="150" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="856" y1="150" x2="1044" y2="150" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Arrow heads -->
+  <polygon points="404,145 404,155 414,150" fill="#ccc"/>
+  <polygon points="604,145 604,155 614,150" fill="#ccc"/>
+  <polygon points="804,145 804,155 814,150" fill="#ccc"/>
+  <polygon points="1044,145 1044,155 1054,150" fill="#ccc"/>
+
+  <!-- Step 1 -->
+  <circle cx="180" cy="150" r="36" fill="#1a5632"/>
+  <text x="180" y="158" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+  <text x="180" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Заявка</text>
+  <rect x="130" y="225" width="100" height="5" rx="2" fill="#ccc"/>
+  <rect x="140" y="238" width="80" height="5" rx="2" fill="#ccc"/>
+
+  <!-- Step 2 -->
+  <circle cx="430" cy="150" r="36" fill="#1a5632"/>
+  <text x="430" y="158" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+  <text x="430" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Оценка</text>
+  <rect x="380" y="225" width="100" height="5" rx="2" fill="#ccc"/>
+  <rect x="390" y="238" width="80" height="5" rx="2" fill="#ccc"/>
+
+  <!-- Step 3 -->
+  <circle cx="640" cy="150" r="36" fill="#1a5632"/>
+  <text x="640" y="158" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+  <text x="640" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Договор</text>
+  <rect x="590" y="225" width="100" height="5" rx="2" fill="#ccc"/>
+  <rect x="600" y="238" width="80" height="5" rx="2" fill="#ccc"/>
+
+  <!-- Step 4 -->
+  <circle cx="850" cy="150" r="36" fill="#1a5632"/>
+  <text x="850" y="158" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">4</text>
+  <text x="850" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Выполнение</text>
+  <rect x="800" y="225" width="100" height="5" rx="2" fill="#ccc"/>
+  <rect x="810" y="238" width="80" height="5" rx="2" fill="#ccc"/>
+
+  <!-- Step 5 -->
+  <circle cx="1080" cy="150" r="36" fill="#1a5632"/>
+  <text x="1080" y="158" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">5</text>
+  <text x="1080" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Сдача работ</text>
+  <rect x="1030" y="225" width="100" height="5" rx="2" fill="#ccc"/>
+  <rect x="1040" y="238" width="80" height="5" rx="2" fill="#ccc"/>
+</svg>
